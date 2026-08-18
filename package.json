@@ -1,6 +1,6 @@
 {
   "name": "dsh-session-sight",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "DeepSeek Harness 会话「看清再动手」外挂：归档/彻底删除（走系统回收站）+ 会话内容只读预览（Markdown），零依赖、不 patch 官方。",
   "type": "module",
   "license": "MIT",
