@@ -27,15 +27,15 @@ DeepSeek Harness（DSH）会话「看清再动手」外挂插件。
 
 | 命令 | 作用 |
 |---|---|
-| `/delete-session <id|标题>` | 移入临时回收站（可恢复） |
-| `/restore-session <id|标题>` | 从临时回收站恢复 |
-| `/recycle-session <id|标题>` | 彻底删除（进系统回收站） |
+| `/delete-session <id\|标题>` | 移入临时回收站（可恢复） |
+| `/restore-session <id\|标题>` | 从临时回收站恢复 |
+| `/recycle-session <id\|标题>` | 彻底删除（进系统回收站） |
 | `/trash` | 查看临时回收站 |
 | `/empty-trash confirm` | 清空临时回收站（自动扫残留） |
 | `/clean-orphans` | 清理 projcache 残留孤儿 |
-| `/archive-session <id|标题>` | 归档（隐藏、不毁数据） |
+| `/archive-session <id\|标题>` | 归档（隐藏、不毁数据） |
 | `/archived` | 列出归档会话 |
-| `/unarchive <id|标题>` | 取消归档，回原位置 |
+| `/unarchive <id\|标题>` | 取消归档，回原位置 |
 
 ## 设计要点
 
