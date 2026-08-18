@@ -70,6 +70,17 @@ dsh plugin --profile web add dsh-session-sight
 - 需要 Node 22+（`zlib.zstdDecompressSync` 从 Node 22 起可用，Node 24 已验证）；
 - 仅 Web 端有 UI（`platform: web`）；命令在所有端可用。
 
+## 参考与致谢
+
+本项目以下实现借鉴（并本地演化）自社区项目与官方源码：
+
+- [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete)：清脏思路与函数雏形（`sessionIdVariants` 双 id 拼写、`stripStorageDomains` 走 storageDomain 清 projcache 行 + workspace 账目）；
+- [wsxwj123/dsh-plugins · dsh-session-manager](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager)：幽灵行判定、恢复不被覆盖目录、`/empty-trash confirm` 二次确认等语义；
+- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats)：host 端懒绑定 HTTP 查询面（`/plugins/.../state` 路由）的挂载姿势；
+- [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) 官方源码与文档：client bundle 契约、`sidebar.footer.action` slot、`MarkdownText`、`archiveSession` 等官方公开接口用法。
+
+其余逻辑（两级删除语义、系统回收站清理、zstd 多帧预览解码、客户端薄壳面板）为本项目自行实现。
+
 ## License
 
 MIT
