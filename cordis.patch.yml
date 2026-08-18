@@ -1,0 +1,4 @@
+# dsh-session-sight bundle patch（供 profile bundles 列表加载）
+- insert:
+    - id: dsh-session-sight
+      name: 'dsh-session-sight'
